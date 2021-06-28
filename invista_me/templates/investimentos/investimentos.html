@@ -9,6 +9,7 @@
             <th>Id</th>
             <th>Investimento</th>
             <th>Valor</th>
+            <th>Pago</th>
             <th></th>
             <th></th>
             <th></th>
@@ -18,6 +19,7 @@
             <td>{{dado.id}}</td>
             <td>{{dado.investimento}}</td>
             <td>{{dado.valor}}</td>
+            <td>{{dado.pago}}</td>
             <td><button class="btn btn-info"><a style="color: white;" href="{% url 'detalhe' dado.id %}">Detalhe</a></button></td>
             <td><button class='btn btn-warning'><a style='color:white;'href="{% url 'editar' dado.id %}">Editar</a></button></td>
             <td><button class="btn btn-danger"><a style="color: white;" href="{% url 'excluir' dado.id %}">Excluir</a></button></td>
